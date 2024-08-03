@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -11,8 +12,8 @@
     <title>work</title>
   </head>
   <body>
-    <div class="main-page-contaner">
-      <div class="page-1">
+    <div class="main-page-contaner" >
+      <div class="page-1"  data-scroll data-scroll-speed="-2">
         <nav>
           <div class="right">
             <svg
@@ -33,9 +34,10 @@
               <li>project</li>
               <li>about</li>
               <li>studies</li>
-              <i class="ri-close-large-line"></i>
+             
               <!-- <i class="ri-add-large-line"></i> -->
             </ul>
+            <i class="ri-close-large-line" id="btn"></i>
           </div>
         </nav>
         <header>
@@ -52,9 +54,9 @@
         </footer>
       </div>
 
-      <div class="page-2">
-        <header>
-          <div class="elem" scroll-img="">
+      <div class="page-2" data-scroll data-scroll-speed="3">
+        <header id="page-2">
+          <div class="elem" data-img="https://works.studio/assets/imager/images/mineral-health/38349/MIN-1_240208_000417_1a58980f77ae6d8c6a1e26c40e92a05d.jpg">
             <h1>mineral</h1>
           
             <div class="moving">
@@ -93,7 +95,7 @@
               </div>
             </div>
           </div>
-          <div class="elem" scroll-img="">
+          <div class="elem" data-img="https://works.studio/assets/imager/images/skky-partners/37986/skky-25_1a58980f77ae6d8c6a1e26c40e92a05d.jpg">
             <h1>erthos</h1>
             
             <div class="moving">
@@ -132,7 +134,7 @@
               </div>
             </div>
           </div>
-          <div class="elem" scroll-img="">
+          <div class="elem" data-img="https://works.studio/assets/imager/images/erthos-brand-identity/43075/Home-Featured-Image_1a58980f77ae6d8c6a1e26c40e92a05d.jpg">
             <h1>converse</h1>
             
             <div class="moving">
@@ -171,7 +173,7 @@
               </div>
             </div>
           </div>
-          <div class="elem" scroll-img="">
+          <div class="elem" data-img="https://works.studio/assets/imager/images/boldly/37287/BOLDLY-1_1a58980f77ae6d8c6a1e26c40e92a05d.jpg">
             <h1>boldly</h1>
            
             <div class="moving">
@@ -210,7 +212,7 @@
               </div>
             </div>
           </div>
-          <div class="elem" scroll-img="hellow">
+          <div class="elem" data-img="https://works.studio/assets/imager/images/converse-global-fa23/43403/converse-21_240523_143223_1a58980f77ae6d8c6a1e26c40e92a05d.jpg">
             <h1>skky</h1>
            
             <div class="moving">
@@ -252,8 +254,19 @@
           </div>
         </header>
       </div>
+      <div class="page-3">
+       <header>
+         
+           <div class="dynamic-div"></div>
+       </header>
+          
+     </div>
+      </div>
     </div>
-
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app.js"></script>
   </body>
 </html>
